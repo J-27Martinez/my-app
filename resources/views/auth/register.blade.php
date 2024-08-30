@@ -31,35 +31,28 @@
             </div>
 
             <div class="flex items-center justify-right mt-4">
-                <select class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" aria-label="Default select example">
+                <select class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" aria-label="Default select example" name="gender">
                     <option selected>Generó</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="famale">Femenino</option>
+                    <option value="male">Masculino</option>
                 </select>
 
                 <select class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" aria-label="Default select example">
                     <option selected>Edad</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    @for ($i = 15; $i < 45; $i++)
+                        <option value="{{ $i }}">{{ $i }}</option>
+                    @endfor
                 </select>
 
                 <select class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" aria-label="Default select example">
                     <option selected>Estado civil</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="single">Soltero</option>
+                    <option value="merried">Casado</option>
                 </select>
             </div>
 
             <div class="mt-4">
-                <select class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" aria-label="Default select example">
-                    <option selected>Nivel de interes</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <!-- JS file <select-learning-interest></select-learning-interest> -->
             </div>
 
             <!-- Password -->
